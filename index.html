@@ -4,62 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Page1</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- sortcuts
-    1- multi line select: alt+ctrl+arrow
-    2- Move row one line up/down alt + arrow up/down
+    <header id="head">
+      <nav>
+        <ul>
+          <img src="./imgs/logo.png" />
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <div class="width50">
+        <h1>welcome to <mark>booking system</mark></h1>
+        <p>
+          Enjoy our hotel <strong><i>With</i> Comfory and privacy </strong> and
+          reserve remotly
+        </p>
+      </div>
+      <div class="width50">
+        <img class="welcome-img" src="imgs/hotel.jpg" />
+      </div>
+    </section>
+    <section id="booking">
+      <div>
+        <h2>Book your Room</h2>
+        <summary>ENJOY YOUR STAYING WITH US</summary>
+        <label> your name:</label>
+        <input type="text" />
+        <br />
+        <br />
+        <label> county:</label>
+        <select>
+          <option>select ..</option>
+          <option>Suadi Arabia</option>
+          <option>Unitied States</option>
+          <option>Germany</option>
+          <option>Qatar</option>
+          <option>Turkey</option>
+        </select>
+        <br />
+        <br />
+        <label> arrival date:</label>
+        <input type="date" />
+        <br />
 
+        <label> departure date:</label>
+        <input type="date" />
 
-    -->
-    <h1>welcome to booking system</h1>
-    <label> your name:</label>
-    <input type="text" />
-    <br />
-    <br />
-    <label> county:</label>
-    <select>
-      <option>select ..</option>
-      <option>Suadi Arabia</option>
-      <option>Unitied States</option>
-      <option>Germany</option>
-      <option>Qatar</option>
-      <option>Turkey</option>
-    </select>
-    <br />
-    <br />
-    <label> arrival date:</label>
-    <input type="date" />
-    <br />
-    
-    <label> departure date:</label>
-    <input type="date" />
-    
-    <br />
-    <br />
-    <label>Select Room Type:</label>
-    <br />
-    <label> Sigle Room:</label>
-    <input type="radio" name="roomt"  />
-    <br />
-    <label> Double room:</label>
-    <input type="radio" name="roomt"  />
-    <br />
-    <label> sweet:</label>
-    <input type="radio" name="roomt"  />
-    <br />
-    <br />
-    <label>Select Service Type:</label>
-    <br />
-    <label> Sigle Service:</label>
-    <input type="checkbox"  />
-    <br />
-    <label> Double room:</label>
-    <input type="checkbox"  />
-    <br />
-    <label> sweet:</label>
-    <input type="checkbox"  />
-    <br />
-    <input type="submit"/>
+        <br />
+        <br />
+        <label>Select Room Type:</label>
+        <br />
+        <label> Sigle Room:</label>
+        <input type="radio" name="roomt" />
+        <br />
+        <label> Double room:</label>
+        <input type="radio" name="roomt" />
+        <br />
+        <label> sweet:</label>
+        <input type="radio" name="roomt" />
+        <br />
+        <br />
+        <label>Select Service Type:</label>
+        <br />
+        <label> Sigle Service:</label>
+        <input type="checkbox" />
+        <br />
+        <label> Double room:</label>
+        <input type="checkbox" />
+        <br />
+        <label> sweet:</label>
+        <input type="checkbox" />
+        <br />
+        <input type="submit" />
+      </div>
+    </section>
+    <footer>
+      <div id="contact">
+        <label>Name</label>
+        <input type="text" placeholder="your name" />
+        <label>Message</label>
+        <textarea placeholder="your message"></textarea>
+      </div>
+      <img />
+      <p>all right reserved</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
