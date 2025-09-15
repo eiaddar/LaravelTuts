@@ -8,6 +8,7 @@
   </head>
   <body>
     <header id="head">
+      <marquee>hello</marquee>
       <nav>
         <ul>
           <img src="./imgs/logo.png" />
@@ -19,6 +20,15 @@
       </nav>
     </header>
     <section id="hero">
+      <div class="hero-area">
+        <img src="imgs/logo.jpg" class="logo-hero" >
+        <h1 id="head-hero">
+          Hotel Management System
+        </h1>
+      </div>
+      <br/>
+    </section>
+    <section>
       <div class="width50">
         <h1>welcome to <mark>booking system</mark></h1>
         <p>
@@ -31,58 +41,65 @@
       </div>
     </section>
     <section id="booking">
-      <div>
-        <h2>Book your Room</h2>
-        <summary>ENJOY YOUR STAYING WITH US</summary>
-        <label> your name:</label>
-        <input type="text" />
-        <br />
-        <br />
-        <label> county:</label>
-        <select>
-          <option>select ..</option>
-          <option>Suadi Arabia</option>
-          <option>Unitied States</option>
-          <option>Germany</option>
-          <option>Qatar</option>
-          <option>Turkey</option>
-        </select>
-        <br />
-        <br />
-        <label> arrival date:</label>
-        <input type="date" />
-        <br />
+      <form method="get">
+        <div>
+          <h2>Book your Room</h2>
+          <summary>ENJOY YOUR STAYING WITH US</summary>
 
-        <label> departure date:</label>
-        <input type="date" />
+          <label for="your-name"> your name:</label>
 
-        <br />
-        <br />
-        <label>Select Room Type:</label>
-        <br />
-        <label> Sigle Room:</label>
-        <input type="radio" name="roomt" />
-        <br />
-        <label> Double room:</label>
-        <input type="radio" name="roomt" />
-        <br />
-        <label> sweet:</label>
-        <input type="radio" name="roomt" />
-        <br />
-        <br />
-        <label>Select Service Type:</label>
-        <br />
-        <label> Sigle Service:</label>
-        <input type="checkbox" />
-        <br />
-        <label> Double room:</label>
-        <input type="checkbox" />
-        <br />
-        <label> sweet:</label>
-        <input type="checkbox" />
-        <br />
-        <input type="submit" />
-      </div>
+          <input type="text" name="your-name" id="your-name" placeholder="type your name .." disabled required/>
+          <br />
+          <br />
+          <label> county:</label>
+          <select name="country" >
+            <option>select ..</option>
+            <option>Suadi Arabia</option>
+            <option>Unitied States</option>
+            <option>Germany</option>
+            <option>Qatar</option>
+            <option>Turkey</option>
+          </select>
+          <br />
+          <br />
+          <label> arrival date:</label>
+
+          <input type="date" name="arriavl-date"/>
+          <input type="color" ma,e="color"/>
+          <br />
+
+          <label> departure date:</label>
+          <input type="date" />
+
+          <br />
+          <br />
+          <label>Select Room Type:</label>
+          <br />
+          <label> Sigle Room:</label>
+          <input type="radio" name="roomt" />
+          <br />
+          <label> Double room:</label>
+          <input type="radio" name="roomt" />
+          <br />
+          <label> sweet:</label>
+          <input type="radio" name="roomt" />
+          <br />
+          <br />
+          <label>Select Service Type:</label>
+          <br />
+          <label> Sigle Service:</label>
+          <input type="checkbox" />
+          <br />
+          <label> Double room:</label>
+          <input type="checkbox" />
+          <br />
+          <label> sweet:</label>
+          <input type="checkbox" />
+          <br />
+        
+        </div>
+        <input type="submit" value="Post Data"/>
+      </form>
     </section>
     <footer>
       <div id="contact">
