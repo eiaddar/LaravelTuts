@@ -59,6 +59,17 @@ console.log(welcome.innerHTML);
   // alert(country.value*singleRoom.va);
 }
 
+function validate(){
+    let yourName= document.getElementById('your-name');
+    if(yourName.value == ""){
+      yourName.style.border="2px solid red";
+      document.getElementById("errorMsg").innerHTML='<span style="color:red; ">Please Input your name</span>';
+
+
+    }
+
+}
+
 
 
 
