@@ -1,7 +1,9 @@
 body{
-  max-width: 1920px;
+  /* max-width: 100%; */
   /* background-color: rgb(5, 66, 57); */
   background-image: url(/imgs/hotel.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
   section {
   color: rgb(1, 44, 26);
@@ -56,6 +58,7 @@ nav ul img {
 }
 .welcome-img{
     max-width: 100%;
+    background-repeat: no-repeat;
 }
 
 .hero-area{

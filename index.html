@@ -30,14 +30,14 @@
     </section>
     <section>
       <div class="width50">
-        <h1>welcome to <mark>booking system</mark></h1>
+        <h1 id="welcome">welcome to <mark>booking system</mark></h1>
         <p>
           Enjoy our hotel <strong><i>With</i> Comfory and privacy </strong> and
           reserve remotly
         </p>
       </div>
       <div class="width50">
-        <img class="welcome-img" src="imgs/hotel.jpg" />
+        <!-- <img class="welcome-img" src="imgs/hotel.jpg" /> -->
       </div>
     </section>
     <section id="booking">
@@ -48,74 +48,75 @@
 
           <label for="your-name"> your name:</label>
 
-          <input type="text" name="your-name" id="your-name" placeholder="type your name .." disabled required/>
+          <input type="text" name="your-name" id="your-name" placeholder="Eiad .." 
+          value="" required/>
           <br />
           <br />
           <label> county:</label>
-          <select name="country" >
-            <option>select ..</option>
-            <option>Suadi Arabia</option>
-            <option>Unitied States</option>
-            <option>Germany</option>
-            <option>Qatar</option>
-            <option>Turkey</option>
+          <select name="country" id="county" >
+            <option value="0">select ..</option>
+            <option value="1">Suadi Arabia</option>
+            <option value="1.12">Unitied States</option>
+            <option value="0.85">Germany</option>
+            <option value="1.5">Qatar</option>
+            <option value="1">Turkey</option>
           </select>
           <br />
           <br />
           <label> arrival date:</label>
 
-          <input type="date" name="arriavl-date"/>
+
+          <input type="date" name="arriavl-date" id="arriavl-date"/>
           <input type="color" ma,e="color"/>
           <br />
 
           <label> departure date:</label>
-          <input type="date" />
+          <input type="date" name="departure-date" id="departure-date" />
 
           <br />
           <br />
           <label>Select Room Type:</label>
           <br />
           <label> Sigle Room:</label>
-          <input type="radio" name="roomt" />
+          <input type="radio" name="roomt" id="room" value="30" />
           <br />
           <label> Double room:</label>
-          <input type="radio" name="roomt" />
+          <input type="radio" name="roomt" id="room" value="50" />
           <br />
           <label> sweet:</label>
-          <input type="radio" name="roomt" />
+          <input type="radio" name="roomt" id="room" value="80"/>
           <br />
           <br />
           <label>Select Service Type:</label>
           <br />
-          <label> Sigle Service:</label>
-          <input type="checkbox" />
+          <label> WIFI:</label>
+          <input type="checkbox" id="wifi-service" value="1" />
           <br />
-          <label> Double room:</label>
-          <input type="checkbox" />
+          <label> Breakfast:</label>
+          <input type="checkbox" id="breakfast-service" value="10"/>
           <br />
-          <label> sweet:</label>
-          <input type="checkbox" />
+          <label> Pool:</label>
+          <input type="checkbox" id="pool-service" value="5"/>
+          <br />
+          <label> gym:</label>
+          <input type="checkbox" id="gym-service" value="3"/>
           <br />
         
         </div>
-        <input type="submit" value="Post Data"/>
       </form>
+      <button onclick="calc()">Calculate</button>
     </section>
     <footer>
-      <div id="contact">
+      <!-- <div id="contact">
         <label>Name</label>
         <input type="text" placeholder="your name" />
         <label>Message</label>
         <textarea placeholder="your message"></textarea>
-      </div>
+      </div> -->
       <img />
       <p>all right reserved</p>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+   
     </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
